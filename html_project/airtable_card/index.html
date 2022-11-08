@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Chidera/AirtableCard</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			body {
+				font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell,
+					"Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+				color: #333;
+				font-size: 16px;
+				font-weight: 500;
+			}
+
+			.card {
+				max-width: 270px;
+				border-radius: 15px;
+				background-color: #d0f0fd;
+				margin: auto;
+			}
+
+			.mostDiv {
+				background-color: #2d7ff9;
+				color: white;
+				padding: 15px;
+				border-top-left-radius: 15px;
+				border-top-right-radius: 15px;
+			}
+
+			.info,
+			.price,
+			.benefits {
+				width: 90%;
+				margin: auto;
+			}
+
+			.info {
+				font-size: 19px;
+				margin: 25px auto 50px;
+			}
+
+			.price {
+				word-spacing: 0.7px;
+				font-weight: 700;
+				margin: 25px auto 20px;
+			}
+
+			.big {
+				font-size: 60px;
+				float: left;
+				letter-spacing: 0.01em;
+				display: block;
+				margin-right: 15px;
+			}
+
+			.duration {
+				font-weight: 700;
+				font-size: 14px;
+				padding: 30px 5px 10px 0px;
+			}
+
+			.monthlyBill {
+				width: 90%;
+				margin: 20px auto;
+			}
+
+			button {
+				border-radius: 30px;
+				background-color: #2d7ff9;
+				padding: 1rem 2rem;
+				border-color: #2d7ff9;
+				margin: 20px auto;
+				width: 85%;
+				display: block;
+				color: white;
+			}
+
+			button:hover {
+				background-color: #2750ae;
+				cursor: pointer;
+			}
+
+			.benefits {
+				padding-bottom: 40px;
+			}
+
+			u {
+				border-bottom: 1px dotted;
+				text-decoration: none;
+			}
+
+			li {
+				list-style-type: none;
+				line-height: 1.8;
+				font-weight: 600;
+			}
+
+			ul li::before {
+				content: "\2713\0020";
+			}
+		</style>
+	</head>
+	<body>
+		<div class="card">
+			<div class="mostDiv">
+				<h4>Most popular</h4>
+			</div>
+			<div class="info">
+				<h3>Pro</h3>
+				<p>For teams and departments who need to build connected apps to power their most important processes</p>
+			</div>
+			<div class="price">
+				<p class="big">$20</p>
+				<p class="duration">
+					per seat /month <br />
+					billed annually
+				</p>
+			</div>
+			<p class="monthlyBill"><strong>$12</strong> billed monthly</p>
+
+			<button>Try for free</button>
+
+			<div class="benefits">
+				<p>Everything in <strong>Plus</strong>, plus:</p>
+
+				<ul>
+					<li>10 <u>extensions</u> per base</li>
+					<li>7 sync integrations including Jira Cloud</li>
+					<li>50,000 records per base</li>
+					<li>20GB of attachments per base</li>
+					<li>Gantt & Timeline Views</li>
+					<li>Granular interface permissions</li>
+					<li>Gantt & Timeline Views</li>
+					<li>1-year revision & snapshot history</li>
+					<li>Personal & locked views</li>
+					<li>Field & table editing permissions</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>
