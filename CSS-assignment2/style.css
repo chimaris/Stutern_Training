@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Marhey:wght@300&display=swap");
+
+section {
+	font-family: "Marhey", cursive;
+	padding: 10px 20px;
+	margin: 30px 300px;
+	font-size: 14px;
+	border: 5px solid black;
+	box-shadow: 2px 2px 2px 2px red;
+	border-radius: 10px;
+	line-height: 1.8;
+}
+
+section h2,
+h1 {
+	text-align: center;
+}
+
+.first-section {
+	color: green;
+}
+
+.second-section {
+	color: red;
+}
+
+.third-section {
+	color: blue;
+}

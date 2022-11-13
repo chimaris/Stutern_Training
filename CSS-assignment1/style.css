@@ -1,0 +1,30 @@
+.likes {
+	color: rebeccapurple;
+	font-size: 1.5rem;
+}
+
+#likes {
+	color: blue;
+	font-size: 2rem;
+}
+#dislikes {
+	color: palevioletred;
+	font-size: 1.5rem;
+}
+.dislikes {
+	color: powderblue;
+	font-size: 2rem;
+}
+
+.like {
+	color: green;
+}
+#like {
+	color: goldenrod;
+}
+.dislike {
+	color: yellowgreen;
+}
+#dislike {
+	color: purple;
+}
