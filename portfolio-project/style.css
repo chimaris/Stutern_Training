@@ -1,0 +1,254 @@
+/* Box Model Hack */
+* {
+	box-sizing: border-box;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+html {
+	scroll-behavior: smooth;
+}
+body {
+	font-family: "Open Sans", sans-serif;
+	background-color: black;
+	color: white;
+	line-height: 2;
+	scrollbar-color: #ff8c00;
+}
+
+h1,
+h3,
+h2 {
+	font-family: "Poppins", sans-serif;
+	letter-spacing: 5px;
+}
+
+span {
+	color: #ff8c00;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+nav {
+	height: 700px;
+	background-color: rgb(27, 26, 26);
+}
+
+main {
+	background-color: black;
+	color: floralwhite;
+	padding: 20px;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+img {
+	/* width: 60%;
+	height: 30%; */
+	max-width: 60%;
+	max-height: 30%;
+}
+
+.social-icons i {
+	color: white;
+}
+
+.social-icons i:hover {
+	color: #ff8c00;
+}
+
+nav ul {
+	list-style: none;
+}
+
+nav img {
+	border-radius: 50%;
+	border: 5px solid #ff8c00;
+	margin: 20px 70px;
+}
+
+nav ul.navBar li a {
+	display: block;
+	width: 250px;
+	padding: 10px;
+	margin: 20px auto;
+	background-color: darkgray;
+	text-align: center;
+	transition: all 200ms ease;
+	font-weight: bold;
+}
+
+nav ul.navBar li a:hover {
+	background-color: black;
+	color: #ff8c00;
+	cursor: pointer;
+}
+
+ul.social-icons {
+	width: 200px;
+	display: flex;
+	justify-content: space-between;
+	margin: 20px auto;
+}
+
+header i {
+	text-align: center;
+}
+
+header i:hover {
+	color: #ff8c00;
+}
+
+table {
+	border-spacing: 10px 0;
+	line-height: 1.5;
+}
+td {
+	padding: 10px 10px 10px 0;
+}
+
+section {
+	margin: 30px 0;
+}
+
+section h2 {
+	border-left: 5px solid #ff8c00;
+	padding: 15px;
+}
+
+/* PORTFOLIO SECTION */
+
+.portfolio .cards {
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	/* justify-content: space-between; */
+}
+
+.siteImage {
+	width: 85%;
+	margin-right: 10px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 20px;
+	margin: 10px auto;
+}
+
+main .portfolio .siteImage:hover {
+	opacity: 0.6;
+}
+
+.siteImage .content {
+	background-color: white;
+	color: #ff8c00;
+	width: 80%;
+	text-align: center;
+	margin: 150px auto 0;
+	border: 3px solid #ff8c00;
+	height: 80px;
+}
+
+.siteImage .content h4 {
+	margin: unset;
+}
+
+.cards .resturant {
+	background-image: url("../img/resturant.JPG");
+}
+
+.cards .huddle {
+	background-image: url("../img/huddle-landing-page.JPG");
+}
+
+.cards .airtable {
+	background-image: url("../img/airtable_card.JPG");
+}
+
+.cards .shorten {
+	background-image: url("../img/shorten.JPG");
+}
+
+.cards .social {
+	background-image: url("../img/socialProof.JPG");
+}
+
+.cards .marisPage {
+	background-image: url("../img/marisDigitals.JPG");
+}
+
+form input,
+form textarea {
+	width: 100%;
+	display: block;
+	padding: 15px 20px;
+	margin: 20px 0;
+	background-color: black;
+	color: white;
+}
+
+@media screen and (min-width: 601px) {
+	.portfolio .cards {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	.siteImage {
+		width: 30%;
+	}
+
+	.contacts {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.contactMe form,
+	.contacts .address {
+		width: 50%;
+	}
+	.contactMe form {
+		margin-right: 10px;
+	}
+}
+
+@media screen and (max-width: 1100px) {
+	nav {
+		height: 600px;
+		text-align: center;
+		z-index: 5;
+	}
+
+	header {
+		text-align: center;
+	}
+}
+
+@media screen and (min-width: 1150px) {
+	.wrapper {
+		display: grid;
+		grid-template-columns: 25% 75%;
+	}
+
+	nav {
+		position: sticky;
+		top: 0;
+	}
+}
+
+footer {
+	text-align: right;
+	background-color: black;
+	color: white;
+	font-size: 12px;
+	border-top: 2px solid white;
+	padding: 10px;
+}
